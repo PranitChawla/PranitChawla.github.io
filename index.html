@@ -3,288 +3,187 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Pranit Chawla - Personal Website">
-    <title>Pranit Chawla | Portfolio</title>
+    <meta name="description" content="Pranit Chawla - Applied Scientist II">
+    <title>Pranit Chawla</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation -->
-    <nav class="navbar" id="navbar">
-        <div class="container">
-            <div class="nav-brand">Pranit Chawla</div>
-            <ul class="nav-menu" id="nav-menu">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#experience" class="nav-link">Experience</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <div class="nav-toggle" id="nav-toggle">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+    <header class="site-header">
+        <div class="container header-content">
+            <div class="site-brand">Pranit Chawla</div>
+            <nav class="site-nav">
+                <a href="#home">Home</a>
+                <a href="#education">Education</a>
+                <a href="#experience">Experience</a>
+                <a href="#publications">Publications</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="container">
-            <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Pranit Chawla</span></h1>
-                <p class="hero-subtitle">Software Engineer & Developer</p>
-                <p class="hero-description">Passionate about building innovative solutions and creating impactful software</p>
-                <div class="hero-buttons">
-                    <a href="#contact" class="btn btn-primary">Get In Touch</a>
-                    <a href="#projects" class="btn btn-secondary">View My Work</a>
-                </div>
-                <div class="social-links">
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                    <a href="mailto:your.email@example.com" aria-label="Email">
-                        <i class="fas fa-envelope"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section">
-        <div class="container">
-            <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate software engineer with a strong foundation in computer science and a drive to create 
-                        innovative solutions. I enjoy tackling complex problems and turning ideas into reality through code.
+    <main class="container">
+        <section id="home" class="hero">
+            <div class="hero-grid">
+                <div class="hero-text">
+                    <p class="hero-kicker">Applied Scientist II, Microsoft Corporation</p>
+                    <name>Pranit Chawla</name>
+                    <p class="hero-summary">
+                        I work on computer-use agents and multimodal machine learning, with a focus on grounding, 
+                        planning, and data-centric training for vision-language systems.
                     </p>
-                    <p>
-                        My experience spans various technologies and domains, and I'm always eager to learn new tools and 
-                        methodologies to stay at the forefront of technology.
+                    <div class="hero-links">
+                        <a href="tel:+14129099852">(412) 909-9852</a>
+                        <span>•</span>
+                        <a href="mailto:pranitchawla98@gmail.com">pranitchawla98@gmail.com</a>
+                        <span>•</span>
+                        <a href="https://linkedin.com/in/pranitchawla" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    </div>
+                    <div class="hero-links">
+                        <a href="PranitChawla_Resume_11_25.pdf" target="_blank" rel="noopener noreferrer">Resume (PDF)</a>
+                    </div>
+                </div>
+                <div class="hero-card">
+                    <div class="profile-placeholder" aria-hidden="true">PC</div>
+                    <div class="hero-meta">
+                        <p>Pittsburgh, PA • Redmond, WA</p>
+                        <p>Machine Learning • Vision-Language • Agents</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <heading>Education</heading>
+            <div class="card-grid">
+                <article class="card">
+                    <h3>Carnegie Mellon University</h3>
+                    <p class="card-subtitle">Master of Science in Machine Learning • GPA 4.24/4</p>
+                    <p class="card-meta">Pittsburgh, PA</p>
+                    <p class="card-body">
+                        Courses: Probability and Statistics, Advanced Intro to Machine Learning, Convex Optimization, 
+                        Probabilistic Graphical Models, Intermediate Deep Learning, Multi-modal Machine Learning.
                     </p>
-                    <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, 
-                        or sharing knowledge with the developer community.
-                    </p>
-                </div>
+                </article>
+                <article class="card">
+                    <h3>Indian Institute of Technology Kharagpur</h3>
+                    <p class="card-subtitle">BTech &amp; MTech in Electronics and Electrical Communication Engineering • GPA 9.52/10</p>
+                    <p class="card-meta">Kharagpur, India</p>
+                    <p class="card-body">Minor in Computer Science and Engineering.</p>
+                </article>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Experience Section -->
-    <section id="experience" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Experience</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Job Title</h3>
-                        <h4 class="timeline-company">Company Name</h4>
-                        <span class="timeline-date">Month Year - Present</span>
-                        <ul class="timeline-description">
-                            <li>Responsibility or achievement 1</li>
-                            <li>Responsibility or achievement 2</li>
-                            <li>Responsibility or achievement 3</li>
-                        </ul>
+        <section id="experience" class="section">
+            <heading>Experience</heading>
+            <div class="role">
+                <div class="role-header">
+                    <div>
+                        <h3>Microsoft Corporation</h3>
+                        <p class="role-title">Applied Scientist II</p>
                     </div>
+                    <div class="role-meta">Redmond, WA • Feb 2024 – Current</div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-marker"></div>
-                    <div class="timeline-content">
-                        <h3 class="timeline-title">Previous Job Title</h3>
-                        <h4 class="timeline-company">Previous Company</h4>
-                        <span class="timeline-date">Month Year - Month Year</span>
-                        <ul class="timeline-description">
-                            <li>Responsibility or achievement 1</li>
-                            <li>Responsibility or achievement 2</li>
-                        </ul>
-                    </div>
-                </div>
+                <ul>
+                    <li>Collaborated with OpenAI’s ChatGPT Agent team to improve grounding, manipulation, and screenshot understanding for o-series models.</li>
+                    <li>Performed large-scale online RL training with 600+ A100s and 2k+ Windows VMs to jointly train o3 on computer-use and PowerPoint generation.</li>
+                    <li>Built a synthetic preference and SFT data pipeline using OpenAI CUA and o4-mini models to train Qwen2.5VL, surpassing UI-TARS 1.5 by 15% on WebVoyager.</li>
+                    <li>Designed a two-stage computer-use agent architecture with GPT-4o as the planner and fine-tuned Qwen2VL as the grounder, reaching 45% success on Windows Agent Arena.</li>
+                </ul>
             </div>
-        </div>
-    </section>
 
-    <!-- Education Section -->
-    <section id="education" class="section">
-        <div class="container">
-            <h2 class="section-title">Education</h2>
-            <div class="education-grid">
-                <div class="education-card">
-                    <div class="education-icon">
-                        <i class="fas fa-graduation-cap"></i>
+            <div class="role">
+                <div class="role-header">
+                    <div>
+                        <h3>Microsoft Corporation</h3>
+                        <p class="role-title">Data and Applied Scientist Intern</p>
                     </div>
-                    <h3 class="education-degree">Degree Name</h3>
-                    <h4 class="education-school">University Name</h4>
-                    <span class="education-date">Year - Year</span>
-                    <p class="education-details">Relevant coursework, honors, or achievements</p>
+                    <div class="role-meta">May 2023 – Aug 2023</div>
                 </div>
-                <div class="education-card">
-                    <div class="education-icon">
-                        <i class="fas fa-certificate"></i>
-                    </div>
-                    <h3 class="education-degree">Additional Certification</h3>
-                    <h4 class="education-school">Institution Name</h4>
-                    <span class="education-date">Year</span>
-                    <p class="education-details">Certification details</p>
-                </div>
+                <ul>
+                    <li>Extended Bletchley, Microsoft Turing’s CLIP-style multimodal model, to support variable-resolution images without high-resolution training.</li>
+                    <li>Improved zero-shot COCO retrieval by 5% using patch size randomization and MoE-based sparsity for vision transformers with DeepSpeed.</li>
+                </ul>
             </div>
-        </div>
-    </section>
 
-    <!-- Skills Section -->
-    <section id="skills" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Programming Languages</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">JavaScript</span>
-                        <span class="skill-tag">Java</span>
-                        <span class="skill-tag">C++</span>
-                        <span class="skill-tag">TypeScript</span>
+            <div class="role">
+                <div class="role-header">
+                    <div>
+                        <h3>Adobe Inc.</h3>
+                        <p class="role-title">Research Intern</p>
                     </div>
+                    <div class="role-meta">Noida, India • May 2020 – Aug 2020</div>
                 </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Frameworks & Libraries</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">React</span>
-                        <span class="skill-tag">Node.js</span>
-                        <span class="skill-tag">Express</span>
-                        <span class="skill-tag">Django</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h3 class="skill-category-title">Tools & Technologies</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Docker</span>
-                        <span class="skill-tag">AWS</span>
-                        <span class="skill-tag">Linux</span>
-                        <span class="skill-tag">MongoDB</span>
-                        <span class="skill-tag">PostgreSQL</span>
-                    </div>
-                </div>
+                <ul>
+                    <li>Studied text-conditioned image retrieval systems and their ability to satisfy natural language constraints.</li>
+                    <li>Improved R@10 by 6% using a cross-modal attention module and CNN + RNN gated fusion for visio-linguistic features.</li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section">
-        <div class="container">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-project-diagram"></i>
+        <section id="research" class="section">
+            <heading>Research</heading>
+            <div class="role">
+                <div class="role-header">
+                    <div>
+                        <h3>University of Southern California</h3>
+                        <p class="role-title">Research Assistant • Advisor: Prof. Ram Nevatia</p>
                     </div>
-                    <h3 class="project-title">Project Name</h3>
-                    <p class="project-description">
-                        Brief description of the project, what it does, and technologies used.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Tech 1</span>
-                        <span class="tech-tag">Tech 2</span>
-                        <span class="tech-tag">Tech 3</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
-                    </div>
+                    <div class="role-meta">Los Angeles, CA (Remote) • May 2021 – Aug 2021</div>
                 </div>
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
-                    <h3 class="project-title">Another Project</h3>
-                    <p class="project-description">
-                        Brief description of another project showcasing your skills and expertise.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Tech 1</span>
-                        <span class="tech-tag">Tech 2</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                        <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fas fa-external-link-alt"></i> Demo
-                        </a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
-                    <h3 class="project-title">Third Project</h3>
-                    <p class="project-description">
-                        Another project that demonstrates your capabilities and problem-solving skills.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Tech 1</span>
-                        <span class="tech-tag">Tech 2</span>
-                        <span class="tech-tag">Tech 3</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">
-                            <i class="fab fa-github"></i> Code
-                        </a>
-                    </div>
-                </div>
+                <ul>
+                    <li>Worked on spatio-temporal video grounding (STVG) to localize tubes of queries in videos.</li>
+                    <li>Proposed a video-text transformer architecture that performs STVG in a single pass without sliding windows or tube proposals.</li>
+                </ul>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section section-alt">
-        <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
-            <div class="contact-content">
-                <p class="contact-description">
-                    I'm always open to discussing new opportunities, interesting projects, or just having a chat. 
-                    Feel free to reach out!
-                </p>
-                <div class="contact-methods">
-                    <a href="mailto:your.email@example.com" class="contact-method">
-                        <i class="fas fa-envelope"></i>
-                        <span>your.email@example.com</span>
-                    </a>
-                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="contact-method">
-                        <i class="fab fa-linkedin"></i>
-                        <span>LinkedIn</span>
-                    </a>
-                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="contact-method">
-                        <i class="fab fa-github"></i>
-                        <span>GitHub</span>
-                    </a>
-                </div>
+        <section id="publications" class="section">
+            <heading>Publications &amp; Patents</heading>
+            <ol class="pub-list">
+                <li>Scalable Data Synthesis for Computer Use Agents with Step-Level Filtering. Preprint 2025, under review.</li>
+                <li>Leveraging Diffusion Models for Test-time Adaptation via Pseudo-label Ensembling. NeurIPS 2023 Workshop on Distribution Shifts.</li>
+                <li>HateProof: Are Hateful Meme Detection Systems really Robust? TheWebConf 2023.</li>
+                <li>Leveraging Style and Content Features for Text Conditioned Image Retrieval. CVPR Workshops 2021. Patent filed at US-PTO.</li>
+                <li>SAC: Semantic Attention Composition for Text-Conditioned Image Retrieval. WACV 2022. Patent filed at US-PTO.</li>
+            </ol>
+        </section>
+
+        <section id="skills" class="section">
+            <heading>Technical Skills</heading>
+            <div class="tags">
+                <span>PyTorch</span>
+                <span>Huggingface</span>
+                <span>DeepSpeed</span>
+                <span>LLamaFactory</span>
+                <span>vLLM</span>
+                <span>Python</span>
+                <span>Git</span>
+                <span>Linux</span>
+                <span>Flask</span>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Footer -->
+        <section id="contact" class="section contact">
+            <heading>Contact</heading>
+            <p>
+                If you'd like to collaborate or discuss research, feel free to reach out.
+            </p>
+            <div class="contact-links">
+                <a href="mailto:pranitchawla98@gmail.com">pranitchawla98@gmail.com</a>
+                <a href="https://linkedin.com/in/pranitchawla" target="_blank" rel="noopener noreferrer">linkedin.com/in/pranitchawla</a>
+            </div>
+        </section>
+    </main>
+
     <footer class="footer">
-        <div class="container">
-            <p>&copy; <span id="current-year"></span> Pranit Chawla. All rights reserved.</p>
-            <p class="footer-note">Built with ❤️ using HTML, CSS, and JavaScript</p>
+        <div class="container footer-content">
+            <p>&copy; <span id="current-year"></span> Pranit Chawla •
+                <a href="https://jonbarron.info/" target="_blank" rel="noopener noreferrer">Design inspired by Jon Barron</a>
+            </p>
         </div>
     </footer>
 
