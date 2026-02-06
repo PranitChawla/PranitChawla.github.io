@@ -34,21 +34,17 @@ a:hover {
 }
 
 .site-header {
-    border-bottom: 1px solid #eee;
+    border-bottom: none;
 }
 
 .header-content {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 24px;
-    padding: 18px;
-    max-width: 980px;
-    margin: 0 auto;
+    justify-content: center;
+    padding: 18px 18px 0;
 }
 
 .site-brand {
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 700;
 }
 
@@ -81,10 +77,9 @@ heading {
 }
 
 .hero-grid {
-    display: grid;
-    grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.7fr);
-    gap: 32px;
-    align-items: start;
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
 }
 
 .hero-kicker {
@@ -97,47 +92,37 @@ heading {
 
 .hero-summary {
     margin-top: 12px;
+    max-width: 720px;
 }
 
 .hero-links {
     margin-top: 12px;
     display: flex;
     flex-wrap: wrap;
-    gap: 8px;
+    gap: 6px;
     align-items: center;
     font-size: 13px;
+}
+
+.hero-media .hero-links {
+    justify-content: center;
+    text-align: center;
 }
 
 .hero-links span {
     color: #999;
 }
 
-.hero-card {
+.hero-media {
+    flex: 0 0 260px;
+}
+
+.hero-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
     border: 1px solid #eee;
-    padding: 18px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    text-align: center;
-}
-
-.profile-placeholder {
-    width: 140px;
-    height: 140px;
-    border-radius: 50%;
-    border: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 700;
-    font-size: 26px;
-    margin: 0 auto;
-    color: #555;
-}
-
-.hero-meta {
-    font-size: 13px;
-    color: #555;
+    background: #f7f7f7;
 }
 
 .section {
@@ -214,6 +199,40 @@ heading {
     margin-bottom: 6px;
 }
 
+.pub-grid {
+    display: grid;
+    gap: 16px;
+}
+
+.pub-item {
+    display: flex;
+    gap: 16px;
+    border: 1px solid #eee;
+    padding: 12px;
+}
+
+.pub-image {
+    width: 180px;
+    height: 120px;
+    object-fit: contain;
+    border: 1px solid #eee;
+    background: #fafafa;
+}
+
+.pub-details {
+    flex: 1;
+}
+
+.pub-title {
+    font-weight: 600;
+}
+
+.pub-meta {
+    color: #777;
+    margin-top: 4px;
+    font-size: 13px;
+}
+
 .tags {
     display: flex;
     flex-wrap: wrap;
@@ -251,15 +270,28 @@ heading {
 
 @media (max-width: 768px) {
     .header-content {
-        flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
     }
 
     .hero-grid {
-        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .hero-media {
+        width: 100%;
+        max-width: 360px;
     }
 
     .site-nav {
         gap: 10px;
+    }
+
+    .pub-item {
+        flex-direction: column;
+    }
+
+    .pub-image {
+        width: 100%;
+        max-width: 360px;
     }
 }
