@@ -17,7 +17,6 @@
             <nav class="site-nav">
                 <a href="#home">Home</a>
                 <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
                 <a href="#publications">Publications</a>
                 <a href="#skills">Skills</a>
                 <a href="#contact">Contact</a>
@@ -77,53 +76,6 @@
             </div>
         </section>
 
-        <section id="experience" class="section">
-            <heading>Experience</heading>
-            <div class="role">
-                <div class="role-header">
-                    <div>
-                        <h3>Microsoft Corporation</h3>
-                        <p class="role-title">Applied Scientist II</p>
-                    </div>
-                    <div class="role-meta">Redmond, WA • Feb 2024 – Current</div>
-                </div>
-                <ul>
-                    <li>Collaborated with OpenAI’s ChatGPT Agent team to improve grounding, manipulation, and screenshot understanding for o-series models.</li>
-                    <li>Performed large-scale online RL training with 600+ A100s and 2k+ Windows VMs to jointly train o3 on computer-use and PowerPoint generation.</li>
-                    <li>Built a synthetic preference and SFT data pipeline using OpenAI CUA and o4-mini models to train Qwen2.5VL, surpassing UI-TARS 1.5 by 15% on WebVoyager.</li>
-                    <li>Designed a two-stage computer-use agent architecture with GPT-4o as the planner and fine-tuned Qwen2VL as the grounder, reaching 45% success on Windows Agent Arena.</li>
-                </ul>
-            </div>
-
-            <div class="role">
-                <div class="role-header">
-                    <div>
-                        <h3>Microsoft Corporation</h3>
-                        <p class="role-title">Data and Applied Scientist Intern</p>
-                    </div>
-                    <div class="role-meta">May 2023 – Aug 2023</div>
-                </div>
-                <ul>
-                    <li>Extended Bletchley, Microsoft Turing’s CLIP-style multimodal model, to support variable-resolution images without high-resolution training.</li>
-                    <li>Improved zero-shot COCO retrieval by 5% using patch size randomization and MoE-based sparsity for vision transformers with DeepSpeed.</li>
-                </ul>
-            </div>
-
-            <div class="role">
-                <div class="role-header">
-                    <div>
-                        <h3>Adobe Inc.</h3>
-                        <p class="role-title">Research Intern</p>
-                    </div>
-                    <div class="role-meta">Noida, India • May 2020 – Aug 2020</div>
-                </div>
-                <ul>
-                    <li>Studied text-conditioned image retrieval systems and their ability to satisfy natural language constraints.</li>
-                    <li>Improved R@10 by 6% using a cross-modal attention module and CNN + RNN gated fusion for visio-linguistic features.</li>
-                </ul>
-            </div>
-        </section>
-
         <section id="research" class="section">
             <heading>Research</heading>
             <div class="role">
@@ -144,11 +96,11 @@
         <section id="publications" class="section">
             <heading>Publications &amp; Patents</heading>
             <ol class="pub-list">
-                <li>Scalable Data Synthesis for Computer Use Agents with Step-Level Filtering. Preprint 2025, under review.</li>
-                <li>Leveraging Diffusion Models for Test-time Adaptation via Pseudo-label Ensembling. NeurIPS 2023 Workshop on Distribution Shifts.</li>
-                <li>HateProof: Are Hateful Meme Detection Systems really Robust? TheWebConf 2023.</li>
-                <li>Leveraging Style and Content Features for Text Conditioned Image Retrieval. CVPR Workshops 2021. Patent filed at US-PTO.</li>
-                <li>SAC: Semantic Attention Composition for Text-Conditioned Image Retrieval. WACV 2022. Patent filed at US-PTO.</li>
+                <li><a href="https://arxiv.org/abs/2512.10962" target="_blank" rel="noopener noreferrer">Scalable Data Synthesis for Computer Use Agents with Step-Level Filtering</a>. Preprint 2025, under review.</li>
+                <li><a href="https://arxiv.org/abs/2311.18071" target="_blank" rel="noopener noreferrer">Leveraging Diffusion Models for Test-time Adaptation via Pseudo-label Ensembling</a>. NeurIPS 2023 Workshop on Distribution Shifts.</li>
+                <li><a href="https://arxiv.org/abs/2302.05703" target="_blank" rel="noopener noreferrer">HateProof: Are Hateful Meme Detection Systems really Robust?</a> TheWebConf 2023.</li>
+                <li><a href="https://openaccess.thecvf.com/content/CVPR2021W/CVFAD/html/Chawla_Leveraging_Style_and_Content_Features_for_Text_Conditioned_Image_Retrieval_CVPRW_2021_paper.html" target="_blank" rel="noopener noreferrer">Leveraging Style and Content Features for Text Conditioned Image Retrieval</a> <a href="https://www.youtube.com/watch?v=uptVpdtW6Ek" target="_blank" rel="noopener noreferrer">[Video]</a>. CVPR Workshops 2021. Patent filed at US-PTO.</li>
+                <li><a href="https://arxiv.org/abs/2009.01485" target="_blank" rel="noopener noreferrer">SAC: Semantic Attention Composition for Text-Conditioned Image Retrieval</a>. WACV 2022. Patent filed at US-PTO.</li>
             </ol>
         </section>
 
@@ -181,9 +133,7 @@
 
     <footer class="footer">
         <div class="container footer-content">
-            <p>&copy; <span id="current-year"></span> Pranit Chawla •
-                <a href="https://jonbarron.info/" target="_blank" rel="noopener noreferrer">Design inspired by Jon Barron</a>
-            </p>
+            <p>&copy; <span id="current-year"></span> Pranit Chawla</p>
         </div>
     </footer>
 
