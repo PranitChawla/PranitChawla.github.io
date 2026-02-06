@@ -269,17 +269,27 @@ heading {
 }
 
 @media (max-width: 768px) {
+    .container {
+        padding: 28px 16px;
+    }
+
     .header-content {
         justify-content: center;
     }
 
+    .site-brand {
+        font-size: 26px;
+    }
+
     .hero-grid {
         flex-direction: column;
+        gap: 24px;
     }
 
     .hero-media {
         width: 100%;
         max-width: 360px;
+        margin: 0 auto;
     }
 
     .site-nav {
@@ -293,5 +303,32 @@ heading {
     .pub-image {
         width: 100%;
         max-width: 360px;
+    }
+}
+
+@media (max-width: 520px) {
+    body {
+        font-size: 13px;
+    }
+
+    heading {
+        font-size: 20px;
+    }
+
+    .hero-summary {
+        max-width: 100%;
+    }
+
+    .hero-links {
+        font-size: 12px;
+    }
+
+    .pub-item {
+        padding: 10px;
+        gap: 12px;
+    }
+
+    .pub-image {
+        height: 160px;
     }
 }
